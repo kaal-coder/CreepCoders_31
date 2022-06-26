@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= product.name %>
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%= product.name %>
+    </h1>
+    <ul>
+        <li>Price: $<%= product.price%>
+        </li>
+        <li>Category: <a href="/products?category=<%= product.category%>">
+                <%= product.category%>
+            </a></li>
+        </a></li>
+        <li>description: $<%= product.description%>
+        </li>
+        <li>quantity <%= product.quantity%>
+        </li>
+        <li><form class="" action="/products/buyer/<%=product._id%>" method="post">
+          <label for="">Rating </label><input type="Number" name="rating" value="">
+          <button type="submit" name="button">add rating</button>
+        </form>
+         </li>
+    </ul>
+    <form action="/buyersInterface/products/<%=product._id%>/shopNow">
+        <button>Buy</button>
+    </form>
+    <a href="/buyersInterface">All Products</a>
+</body>
+
+</html>
