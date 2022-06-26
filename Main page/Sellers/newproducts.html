@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Users/SANJIB/Desktop/HackerWar/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo"><img src="/Users/SANJIB/Desktop/HackerWar/assets/logo.png" alt="" width="150px"></a>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Add Product</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Orders</a>
+                    </li>
+                    <a href="#">Logout</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="split left">
+                <div class="centered">
+                    <input type="image" src="" alt="">
+                    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><img id="output" width="200" /></p>
+
+        <script>
+            var loadFile = function(event) {
+	        var image = document.getElementById('output');
+	        image.src = URL.createObjectURL(event.target.files[0]);
+            };
+        </script>
+                </div>
+              </div>
+              
+              <div class="split right nav-link">
+                <div class="centered">
+                  <img src="/Users/SANJIB/Desktop/HackerWar/assets/avatar.png" alt="image" width="200px">
+                  <h2>Hey Seller.</h2>
+                  <p><form>
+                    <input type="text" value="Product Name"><br>
+                    <input type="text" value="Brand Name"><br>
+                    <input type="text" value="Price"><br>
+                    <input type="text" value="Discout"><br>
+                    <input type="text" value="Number of Items"><br>
+                    <input type="text" value="Product Color"><br>
+                    <input type="text" value="Product Description"><br>
+                </form>
+                </p>
+                <br><br>
+                
+        <input type="button" value="Submit" size="2000px">
+                </div>
+                
+              </div> 
+        </section>
+    </main>
+    
+</body>
+</html>
